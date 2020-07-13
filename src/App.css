@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  line-height: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: auto;  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
