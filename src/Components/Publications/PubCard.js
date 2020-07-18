@@ -25,7 +25,7 @@ const PaperTitle = styled.div`
 const PaperText = styled.div`
   font-size: 0.95rem;
   text-align: left;
-  width: 100%;
+  width: 90%;
   font-weight: 300;
   align-self: flex-start;
   cursor: pointer;
@@ -99,6 +99,16 @@ const YearDiv = styled.div`
   align-items: center;
 `;
 
+const YearDivMobile = styled.div`
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: flexStart;
+  align-items: center;
+`;
+
 const MainContainer = styled.div`
   width: 70vw;
   position: relative;
@@ -109,7 +119,7 @@ const MainContainer = styled.div`
   margin-bottom: 10px;
 `;
 
-const PubCard = ({ data }) => {
+const PubCard = ({ data, mobile, prevPaper }) => {
   const [isOpen, setOpen] = useState(false);
 
   const linkSRC = "./img/link.png";
@@ -148,11 +158,21 @@ const PubCard = ({ data }) => {
     borderColor: selectedColor,
   };
 
-  return (
-    <MainContainer>
-      <YearDiv style={newStyle}>{data.year}</YearDiv>
+  if (prevPaper != null)
+  {
+    if (prevPaper.year === data.year){
+      var hasPrevPaper = true;
+    }
+  }
 
-      <PaperContainer>
+  return (
+    <MainContainer style={mobile ? {flexDirection : "column"} : {}}>
+    {mobile && !hasPrevPaper ? (<YearDivMobile style={newStyle}>{data.year}</YearDivMobile>) :
+    mobile && hasPrevPaper ? <div style={{ height: "3vh"}}/> :
+     (<YearDiv style={newStyle}>{data.year}</YearDiv>)}
+
+
+      <PaperContainer style={mobile ? {width : "100%"} : {}}>
         <ExpandArrow
           onClick={() => collapseFunction()}
           src={expandSRC}
@@ -189,11 +209,12 @@ const PubCard = ({ data }) => {
           </a>
         ) : null}
 
-        <PaperText onClick={() => collapseFunction()}>{data.authors}</PaperText>
+        <PaperText style={mobile ? {width: "85%"} : {}} onClick={() => collapseFunction()}>{data.authors}</PaperText>
         <PaperText onClick={() => collapseFunction()}>{data.journal}</PaperText>
         <PaperTitle onClick={() => collapseFunction()}>{data.title}</PaperTitle>
         <Collapse isOpened={isOpen}>
-          <AbstractContainer onClick={() => collapseFunction()}>
+          <AbstractContainer onClick={() => collapseFunction()}
+          style={mobile ? {width : "90%"} : {}}>
             <PaperAbstract>{data.abstract}</PaperAbstract>
           </AbstractContainer>
         </Collapse>

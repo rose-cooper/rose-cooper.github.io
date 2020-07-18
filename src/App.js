@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   const isMobile = useMediaQuery({
-      query: '(max-width: 768px)'
+      query: '(max-width: 1024px)'
     });
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
       <MenuBar />
       <AMBackground mobile={isMobile}/>
       <ResBackground mobile={isMobile}/>
-      <PubBackground />
+      <PubBackground mobile={isMobile}/>
       <Footer />
     </div>
   );

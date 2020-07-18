@@ -12,7 +12,7 @@ const Background = styled.div`
   align-items: center;
   background-color: transparent;
   margin-top: -5vh;
-  margin-bottom: 0vh;
+  margin-bottom: 5vh;
 `;
 
 const AMBackground = ({mobile}) => {

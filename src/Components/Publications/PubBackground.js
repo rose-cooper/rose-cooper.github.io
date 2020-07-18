@@ -17,11 +17,19 @@ const Background = styled.div`
 `;
 
 const PubBackground = ({mobile}) => {
-  const items = data.map((i) => <PubCard mobile={mobile} key={i.title} data={i} />);
+  const items = data.map((i, index) => {
+    const prevItem = data[index-1];
+    return(
+    <PubCard prevPaper={prevItem} mobile={mobile} key={i.title} data={i} />)});
+
+var mobileStyle = {
+  paddingTop: "5vh"
+}
+
 
   return (
     <div id="publications">
-      <Background>{items}</Background>
+      <Background style={mobile ? mobileStyle : {}}>{items}</Background>
     </div>
   );
 };
