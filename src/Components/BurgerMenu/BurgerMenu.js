@@ -22,7 +22,7 @@ const MenuBackground = styled.div`
   position: fixed;
   top: 0vh;
   left: 0vw;
-  width: 40vw;
+  width: 50vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.85);
   border-right: 1px solid black;
