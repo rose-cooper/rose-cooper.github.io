@@ -7,6 +7,7 @@ const Photo = styled.img`
   object-fit: contain;
   position: relative;
   margin-left: 5vw;
+  max-width: 90vw;
 `;
 
 const ResPhoto = ({ source, mobile}) => {

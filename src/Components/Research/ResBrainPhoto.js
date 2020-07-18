@@ -7,6 +7,7 @@ const Photo = styled.img`
   margin-right: 5vw;
   object-fit: contain;
   position: relative;
+  max-width: 90vw;
 `;
 
 const ResBrainPhoto = ({ source,mobile }) => {
