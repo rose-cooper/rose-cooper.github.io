@@ -8,6 +8,7 @@ import AMBackground from "./Components/AboutMe/AMBackground";
 import ResBackground from "./Components/Research/ResBackground";
 import PubBackground from "./Components/Publications/PubBackground";
 import Footer from "./Components/Footer";
+import BurgerMenu from "./Components/BurgerMenu/BurgerMenu";
 
 function App() {
   const isMobile = useMediaQuery({
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <TopPicture />
-      <MenuBar />
+      {isMobile ? <BurgerMenu /> : <MenuBar />}
       <AMBackground mobile={isMobile}/>
       <ResBackground mobile={isMobile}/>
       <PubBackground mobile={isMobile}/>
