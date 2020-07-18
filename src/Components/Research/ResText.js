@@ -12,8 +12,12 @@ const Text = styled.div`
   text-justify: inter-word;
 `;
 
-const ResText = ({ text }) => {
-  return <Text>{text}</Text>;
+const ResText = ({ text,mobile}) => {
+
+  var mobileStyle = {
+    marginTop: "5vh"
+  }
+  return <Text style={mobile ? mobileStyle : {}}>{text}</Text>;
 };
 
 export default ResText;

@@ -12,13 +12,18 @@ const Background = styled.div`
   align-items: center;
   background-color: transparent;
   margin-top: -5vh;
-  margin-bottom: -5vh;
+  margin-bottom: 0vh;
 `;
 
-const AMBackground = () => {
+const AMBackground = ({mobile}) => {
+  var mobileStyle = {
+    flexDirection:"column",
+    marginLeft: "10vw",
+    marginRight: "10vw",
+  }
   return (
-    <Background>
-      <AMPhoto />
+    <Background style={mobile ? mobileStyle : {}}>
+      <AMPhoto mobile={mobile}/>
       <AMText />
     </Background>
   );

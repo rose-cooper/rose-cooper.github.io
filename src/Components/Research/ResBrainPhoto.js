@@ -9,9 +9,12 @@ const Photo = styled.img`
   position: relative;
 `;
 
-const ResBrainPhoto = ({ source }) => {
+const ResBrainPhoto = ({ source,mobile }) => {
+  var mobileStyle = {
+    marginRight: "0vw"
+  }
   var imageSource = source;
-  return <Photo src={imageSource} alt="" />;
+  return <Photo style={mobile ? mobileStyle : {}} src={imageSource} alt="" />;
 };
 
 export default ResBrainPhoto;

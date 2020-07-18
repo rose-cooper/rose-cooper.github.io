@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from 'react-responsive';
 import "./App.css";
 
 import TopPicture from "./Components/TopPicture";
@@ -9,12 +10,15 @@ import PubBackground from "./Components/Publications/PubBackground";
 import Footer from "./Components/Footer";
 
 function App() {
+  const isMobile = useMediaQuery({
+      query: '(max-width: 768px)'
+    });
   return (
     <div className="App">
       <TopPicture />
       <MenuBar />
-      <AMBackground />
-      <ResBackground />
+      <AMBackground mobile={isMobile}/>
+      <ResBackground mobile={isMobile}/>
       <PubBackground />
       <Footer />
     </div>

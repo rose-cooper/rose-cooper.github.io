@@ -16,8 +16,8 @@ const Background = styled.div`
   line-height: 1;
 `;
 
-const PubBackground = () => {
-  const items = data.map((i) => <PubCard key={i.title} data={i} />);
+const PubBackground = ({mobile}) => {
+  const items = data.map((i) => <PubCard mobile={mobile} key={i.title} data={i} />);
 
   return (
     <div id="publications">

@@ -24,10 +24,15 @@ const Container = styled.div`
   }
 `;
 
-const AMPhoto = () => {
+const AMPhoto = ({mobile}) => {
+  var mobileStyle = {
+    width: "80%",
+    left: "-10%",
+    marginBottom: "-8%"
+  }
   var imageSource = `./img/face.jpg`;
   return (
-    <Container>
+    <Container style={mobile ? mobileStyle : {}}>
       <Photo src={imageSource} alt="" />
     </Container>
   );

@@ -11,11 +11,11 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const ResColumns = () => {
+const ResColumns = ({mobile}) => {
   return (
     <Container>
-      <ResBehaviour />
-      <ResBrain />
+      <ResBehaviour mobile={mobile}/>
+      <ResBrain mobile={mobile}/>
     </Container>
   );
 };

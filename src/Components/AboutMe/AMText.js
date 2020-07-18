@@ -38,14 +38,13 @@ const Text2 = styled.div`
 
 const AMText = () => {
   var text = `2017 - present
-  Postdoctoral Scholar, Memory Modulation Lab
-Department of Psychology & Neuroscience
-Boston College
+  Postdoctoral Scholar
+  Memory Modulation Lab, Boston College
 
-2013-2017
-PhD Psychology, University of Cambridge`;
+  2013-2017
+  PhD Psychology, University of Cambridge`;
 
-  var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember specific events, and how brain networks support the multidimensional quality of our memories`;
+  var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember events, and how brain networks support the multidimensional quality of our memories`;
 
   // ? to do to save data in mongodb??
   //var string = data[0].aboutme.text;

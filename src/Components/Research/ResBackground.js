@@ -11,14 +11,18 @@ const Background = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  margin-top: -10vh;
 `;
 
-const ResBackground = () => {
+const ResBackground = ({mobile}) => {
+  var mobileStyle = {
+    marginTop: "0%"
+  }
   return (
     <div id="research">
-      <Background>
-        <ResColumns />
+      <Background style={mobile ? mobileStyle : {}}>
+        <ResColumns mobile={mobile}/>
       </Background>
     </div>
   );

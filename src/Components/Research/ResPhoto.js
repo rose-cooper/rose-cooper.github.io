@@ -9,9 +9,12 @@ const Photo = styled.img`
   margin-left: 5vw;
 `;
 
-const ResPhoto = ({ source }) => {
+const ResPhoto = ({ source, mobile}) => {
+  var mobileStyle = {
+    marginLeft: "0vw"
+  }
   var imageSource = source;
-  return <Photo src={imageSource} alt="" />;
+  return <Photo style={mobile ? mobileStyle : {}} src={imageSource} alt="" />;
 };
 
 export default ResPhoto;
