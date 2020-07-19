@@ -50,7 +50,7 @@ const AMText = ({mobile,bigScreen}) => {
     paddingLeft: "5vw"
   }
   var bigStyle = {
-    fontSize: "3vh"
+    fontSize: "2.5vh"
   }
   return (
     <Container style={mobile ? mobileStyle : {}}>

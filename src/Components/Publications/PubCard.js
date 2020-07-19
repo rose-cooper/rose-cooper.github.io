@@ -83,9 +83,8 @@ const OSF = styled.i`
   position: absolute;
   width: 24px;
   height: 24px;
-  top: -5px;
+  top: 0px;
   right: -24px;
-  font-size: 1.3em;
   z-index: 1;
 `;
 
@@ -194,7 +193,7 @@ const PubCard = ({ data, mobile, prevPaper }) => {
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <i className="ai ai-osf"></i>
+              <i className="ai ai-osf" style={{ fontSize: "24px"}}></i>
             </a>
           </OSF>
         ) : null}

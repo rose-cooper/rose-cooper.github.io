@@ -18,7 +18,7 @@ const ResText = ({text,mobile,bigScreen}) => {
     marginTop: "5vh"
   }
   var bigStyle = {
-    fontSize: "2.5vh"
+    fontSize: "2vh"
   }
   return <Text style={mobile ? mobileStyle : bigScreen ? bigStyle : {}}>{text}</Text>;
 };

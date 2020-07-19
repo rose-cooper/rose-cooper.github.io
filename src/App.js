@@ -15,7 +15,7 @@ function App() {
       query: '(max-width: 1024px)'
     });
   const isBig = useMediaQuery({
-        query: '(min-width: 1440px)'
+        query: '(min-width: 2048px)'
     });
   return (
     <div className="App">

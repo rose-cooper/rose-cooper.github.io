@@ -27,7 +27,7 @@ var mobileStyle = {
   paddingTop: "5vh"
 }
 var bigStyle = {
-  fontSize: "2.5vh"
+  fontSize: "2vh"
 }
 
   return (
