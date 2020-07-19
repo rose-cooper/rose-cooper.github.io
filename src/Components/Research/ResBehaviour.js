@@ -22,7 +22,7 @@ const ResBehaviour = ({mobile,bigScreen,portrait}) => {
   return (
     <Container style={mobile ? mobileStyle : {}}>
       <ResText bigScreen={bigScreen} mobile={mobile} text={textString} />
-      <ResPhoto portrait={portrait} mobile={mobile} source={imageSource} />
+      <ResPhoto bigScreen={bigScreen} sportrait={portrait} mobile={mobile} source={imageSource} />
     </Container>
   );
 };

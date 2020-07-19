@@ -11,7 +11,7 @@ const Photo = styled.img`
   max-width: 90vw;
 `;
 
-const ResPhoto = ({ source, mobile, portrait}) => {
+const ResPhoto = ({ source, mobile, portrait, bigScreen}) => {
   const isNarrow = useMediaQuery({
         query: '(min-height: 1000px)'
     });
@@ -23,7 +23,10 @@ const ResPhoto = ({ source, mobile, portrait}) => {
     height: "25vw"
   }
   var imageSource = source;
-  return <Photo style={mobile ? mobileStyle : portrait || isNarrow ? portraitStyle : {}} src={imageSource} alt="" />;
+  return <Photo style={mobile ? mobileStyle :
+    bigScreen ? {} :
+    portrait || isNarrow ? portraitStyle :
+    {}} src={imageSource} alt="" />;
 };
 
 export default ResPhoto;

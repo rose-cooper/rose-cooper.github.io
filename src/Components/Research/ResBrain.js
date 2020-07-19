@@ -22,7 +22,7 @@ const ResBrain = ({mobile,bigScreen,portrait}) => {
   }
   return (
     <Container style={mobile ? mobileStyle : {}}>
-      <ResBrainPhoto portrait={portrait} mobile={mobile} source={imageSource} />
+      <ResBrainPhoto bigScreen={bigScreen} portrait={portrait} mobile={mobile} source={imageSource} />
       <ResText bigScreen={bigScreen} mobile={mobile} text={textString} />
     </Container>
   );
