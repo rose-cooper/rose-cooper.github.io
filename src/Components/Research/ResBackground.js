@@ -15,14 +15,14 @@ const Background = styled.div`
   margin-top: -10vh;
 `;
 
-const ResBackground = ({mobile}) => {
+const ResBackground = ({mobile,bigScreen}) => {
   var mobileStyle = {
     marginTop: "0%"
   }
   return (
     <div id="research">
       <Background style={mobile ? mobileStyle : {}}>
-        <ResColumns mobile={mobile}/>
+        <ResColumns bigScreen={bigScreen} mobile={mobile}/>
       </Background>
     </div>
   );

@@ -14,13 +14,16 @@ function App() {
   const isMobile = useMediaQuery({
       query: '(max-width: 1024px)'
     });
+  const isBig = useMediaQuery({
+        query: '(min-width: 1440px)'
+    });
   return (
     <div className="App">
       <TopPicture />
       {isMobile ? <BurgerMenu /> : <MenuBar />}
-      <AMBackground mobile={isMobile}/>
-      <ResBackground mobile={isMobile}/>
-      <PubBackground mobile={isMobile}/>
+      <AMBackground bigScreen={isBig} mobile={isMobile}/>
+      <ResBackground bigScreen={isBig} mobile={isMobile}/>
+      <PubBackground bigScreen={isBig} mobile={isMobile}/>
       <Footer />
     </div>
   );

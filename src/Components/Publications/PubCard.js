@@ -15,7 +15,7 @@ const PaperContainer = styled.div`
 `;
 
 const PaperTitle = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.95em;
   text-align: left;
   width: 100%;
   font-weight: bold;
@@ -23,7 +23,7 @@ const PaperTitle = styled.div`
 `;
 
 const PaperText = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.95em;
   text-align: left;
   width: 90%;
   font-weight: 300;
@@ -32,7 +32,7 @@ const PaperText = styled.div`
 `;
 
 const PaperAbstract = styled.h4`
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 300;
 `;
 
@@ -85,13 +85,13 @@ const OSF = styled.i`
   height: 24px;
   top: -5px;
   right: -24px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   z-index: 1;
 `;
 
 const YearDiv = styled.div`
   width: 10%;
-  font-size: 1.5rem;
+  font-size: 1.3em;
   border-right: 3px solid black;
   margin-right: 1rem;
   display: flex;
@@ -101,7 +101,7 @@ const YearDiv = styled.div`
 
 const YearDivMobile = styled.div`
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 2;
   border-bottom: 3px solid black;
   display: flex;
@@ -115,7 +115,7 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  min-height: 15vh;
+  min-height: 10vh;
   margin-bottom: 10px;
 `;
 

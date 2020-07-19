@@ -36,7 +36,7 @@ const Text2 = styled.div`
   padding-right: 7rem;
 `;
 
-const AMText = ({mobile}) => {
+const AMText = ({mobile,bigScreen}) => {
   var text = `2017 - present
   Postdoctoral Scholar
   Memory Modulation Lab, Boston College
@@ -49,10 +49,13 @@ const AMText = ({mobile}) => {
   var mobileStyle = {
     paddingLeft: "5vw"
   }
+  var bigStyle = {
+    fontSize: "3vh"
+  }
   return (
     <Container style={mobile ? mobileStyle : {}}>
-      <Text>{text}</Text>
-      <Text2>{text2}</Text2>
+      <Text style={bigScreen ? bigStyle : {}}>{text}</Text>
+      <Text2 style={bigScreen ? bigStyle : {}}>{text2}</Text2>
     </Container>
   );
 };

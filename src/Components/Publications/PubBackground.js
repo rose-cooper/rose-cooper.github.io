@@ -14,9 +14,10 @@ const Background = styled.div`
   justify-content: space-around;
   align-items: center;
   line-height: 1;
+  font-size: 16px;
 `;
 
-const PubBackground = ({mobile}) => {
+const PubBackground = ({mobile,bigScreen}) => {
   const items = data.map((i, index) => {
     const prevItem = data[index-1];
     return(
@@ -25,11 +26,13 @@ const PubBackground = ({mobile}) => {
 var mobileStyle = {
   paddingTop: "5vh"
 }
-
+var bigStyle = {
+  fontSize: "2.5vh"
+}
 
   return (
     <div id="publications">
-      <Background style={mobile ? mobileStyle : {}}>{items}</Background>
+      <Background style={mobile ? mobileStyle : bigScreen ? bigStyle : {}}>{items}</Background>
     </div>
   );
 };

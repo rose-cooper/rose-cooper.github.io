@@ -15,7 +15,7 @@ const Background = styled.div`
   margin-bottom: 5vh;
 `;
 
-const AMBackground = ({mobile}) => {
+const AMBackground = ({mobile,bigScreen}) => {
   var mobileStyle = {
     flexDirection:"column",
     marginLeft: "10vw",
@@ -24,7 +24,7 @@ const AMBackground = ({mobile}) => {
   return (
     <Background style={mobile ? mobileStyle : {}}>
       <AMPhoto mobile={mobile}/>
-      <AMText mobile={mobile}/>
+      <AMText bigScreen={bigScreen} mobile={mobile}/>
     </Background>
   );
 };
