@@ -23,16 +23,19 @@ const Name = styled.div`
   text-align: center;
 `;
 
-const TopPicture = () => {
+const TopPicture = ({bigScreen}) => {
   var imageSource = `./img/toppic.jpg`;
   const isSmall = useMediaQuery({
       query: '(max-width: 768px)'
     });
   var smallText = {fontSize: "3.2rem"}
+  var bigStyle = {
+      fontSize: "8vh"
+  }
   return (
     <div id="home">
       <TopImage src={imageSource} alt=""></TopImage>
-      <Name style={isSmall ? smallText : {}}>Rose Cooper, PhD</Name>
+      <Name style={isSmall ? smallText : bigScreen ? bigStyle : {}}>Rose Cooper, PhD</Name>
     </div>
   );
 };

@@ -9,8 +9,8 @@ const Photo = styled.img`
   top: 20%;
   width: 60%;
   height: 60%;
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 600px;
+  max-height: 600px;
 `;
 
 const Container = styled.div`

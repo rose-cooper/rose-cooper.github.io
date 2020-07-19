@@ -15,12 +15,12 @@ function App() {
       query: '(max-width: 1024px)'
     });
   const isBig = useMediaQuery({
-        query: '(min-width: 2048px)'
+        query: '(min-width: 1680px)'
     });
   return (
     <div className="App">
-      <TopPicture />
-      {isMobile ? <BurgerMenu /> : <MenuBar />}
+      <TopPicture bigScreen={isBig}/>
+      {isMobile ? <BurgerMenu /> : <MenuBar bigScreen={isBig}/>}
       <AMBackground bigScreen={isBig} mobile={isMobile}/>
       <ResBackground bigScreen={isBig} mobile={isMobile}/>
       <PubBackground bigScreen={isBig} mobile={isMobile}/>

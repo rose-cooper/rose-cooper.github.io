@@ -21,10 +21,11 @@ const Background = styled.div`
   align-items: center;
   z-index: 50;
   text-align: center;
+  font-size: 16px;
 `;
 
 const Text = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
   color: black;
   padding-right: 40px;
@@ -36,7 +37,7 @@ const Text = styled.div`
 `;
 
 const Buttons = styled.div`
-  font-size: 2rem;
+  font-size: 2em;
   color: black;
   cursor: pointer;
   align-self: center;
@@ -48,7 +49,7 @@ const Buttons = styled.div`
 `;
 
 const Email = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-family: "Montserrat", sans-serif;
   color: black;
   text-align: right;
@@ -62,7 +63,7 @@ const MyIcon = styled.img`
   height: 24px;
 `;
 
-const MenuBar = () => {
+const MenuBar = ({bigScreen}) => {
   const cv = "./files/RCooper-CV.pdf";
   const linkedinSRC = "./img/linkedin.png";
   const twitterSRC = "./img/twitter.png";
@@ -73,19 +74,26 @@ const MenuBar = () => {
   const googleLink =
     "https://scholar.google.co.uk/citations?hl=en&user=oJhb_0YAAAAJ&imq=Rose+Cooper&view_op=list_works";
 
+  var bigStyle = {
+      fontSize: "2.2vh"
+  }
+  var bigIcon = {
+      width: "3vh",
+      height: "3vh"
+  }
   return (
-    <Background>
+    <Background style={bigScreen ? bigStyle : {}}>
       <Buttons>
         <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-          <MyIcon src={linkedinSRC} alt="" />
+          <MyIcon style={bigScreen ? bigIcon : {}} src={linkedinSRC} alt="" />
         </a>
 
         <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-          <MyIcon src={twitterSRC} alt="" />
+          <MyIcon style={bigScreen ? bigIcon : {}} src={twitterSRC} alt="" />
         </a>
 
         <a href={googleLink} target="_blank" rel="noopener noreferrer">
-          <MyIcon src={googleSRC} alt="" />
+          <MyIcon style={bigScreen ? bigIcon : {}} src={googleSRC} alt="" />
         </a>
       </Buttons>
       <LinkContainer>
