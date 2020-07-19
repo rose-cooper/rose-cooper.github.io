@@ -75,11 +75,11 @@ const MenuBar = ({bigScreen}) => {
     "https://scholar.google.co.uk/citations?hl=en&user=oJhb_0YAAAAJ&imq=Rose+Cooper&view_op=list_works";
 
   var bigStyle = {
-      fontSize: "2.2vh"
+      fontSize: "2vh"
   }
   var bigIcon = {
-      width: "3vh",
-      height: "3vh"
+      width: "2.5vh",
+      height: "2.5vh"
   }
   return (
     <Background style={bigScreen ? bigStyle : {}}>

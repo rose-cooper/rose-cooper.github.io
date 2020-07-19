@@ -4,15 +4,21 @@ import AMPhoto from "./AMPhoto";
 import AMText from "./AMText";
 
 const Background = styled.div`
-  width: 100vw;
-  background: white;
+  width: 70vw;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   margin-top: -5vh;
-  margin-bottom: 5vh;
+`;
+
+const Container = styled.div`
+width: 100vw;
+padding-top: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10vh;
 `;
 
 const AMBackground = ({mobile,bigScreen}) => {
@@ -22,10 +28,12 @@ const AMBackground = ({mobile,bigScreen}) => {
     marginRight: "10vw",
   }
   return (
+    <Container>
     <Background style={mobile ? mobileStyle : {}}>
       <AMPhoto mobile={mobile}/>
       <AMText bigScreen={bigScreen} mobile={mobile}/>
     </Background>
+    </Container>
   );
 };
 

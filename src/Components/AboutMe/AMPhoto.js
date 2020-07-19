@@ -5,10 +5,10 @@ const Photo = styled.img`
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 60%;
-  height: 60%;
+  left: 10%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
   max-width: 600px;
   max-height: 600px;
 `;
@@ -29,13 +29,18 @@ const Container = styled.div`
 const AMPhoto = ({mobile}) => {
   var mobileStyle = {
     width: "60%",
-    left: "-10%",
-    marginBottom: "-8%"
+    left: "0%",
+    marginBottom: "2%",
+  }
+  var mobilePhoto = {
+    width: "80%",
+    height: "80%",
+    left: "10%",
   }
   var imageSource = `./img/face.jpg`;
   return (
     <Container style={mobile ? mobileStyle : {}}>
-      <Photo src={imageSource} alt="" />
+      <Photo style={mobile ? mobilePhoto : {}} src={imageSource} alt="" />
     </Container>
   );
 };

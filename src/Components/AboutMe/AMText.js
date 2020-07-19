@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  flex: 0 0 48%;
+  flex: 0 0 60%;
 `;
 
 const Text = styled.div`
@@ -19,7 +19,6 @@ const Text = styled.div`
   white-space: pre-line;
   line-height: 1.5;
   text-align: left;
-  padding-right: 7rem;
   font-weight: 600;
 `;
 
@@ -33,7 +32,6 @@ const Text2 = styled.div`
   text-align: left;
   margin-top: 2rem;
   font-style: italic;
-  padding-right: 7rem;
 `;
 
 const AMText = ({mobile,bigScreen}) => {
