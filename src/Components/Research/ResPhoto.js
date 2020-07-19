@@ -10,12 +10,16 @@ const Photo = styled.img`
   max-width: 90vw;
 `;
 
-const ResPhoto = ({ source, mobile}) => {
+const ResPhoto = ({ source, mobile, portrait}) => {
   var mobileStyle = {
     marginLeft: "0vw"
   }
+  var portraitStyle = {
+    width: "30vw",
+    height: "25vw"
+  }
   var imageSource = source;
-  return <Photo style={mobile ? mobileStyle : {}} src={imageSource} alt="" />;
+  return <Photo style={mobile ? mobileStyle : portrait ? portraitStyle : {}} src={imageSource} alt="" />;
 };
 
 export default ResPhoto;

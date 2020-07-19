@@ -11,11 +11,11 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const ResColumns = ({mobile,bigScreen}) => {
+const ResColumns = ({mobile,bigScreen,portrait}) => {
   return (
     <Container>
-      <ResBehaviour bigScreen={bigScreen} mobile={mobile}/>
-      <ResBrain bigScreen={bigScreen} mobile={mobile}/>
+      <ResBehaviour portrait={portrait} bigScreen={bigScreen} mobile={mobile}/>
+      <ResBrain portrait={portrait} bigScreen={bigScreen} mobile={mobile}/>
     </Container>
   );
 };

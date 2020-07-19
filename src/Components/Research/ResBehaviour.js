@@ -11,7 +11,7 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const ResBehaviour = ({mobile,bigScreen}) => {
+const ResBehaviour = ({mobile,bigScreen,portrait}) => {
   var textString = `When we remember a past event, such as dinner with friends or a hike through a national park, we mentally piece together the diverse aspects of our original experience — the sights, sounds, conversations, thoughts and feelings attached to that moment. Memory is more like a jigsaw puzzle than a video player: remembering one detail helps us to fit the others in place. But, the kinds of content we recall and the accuracy with which we do so varies drastically over time, between different experiences, and from one person to another. My prior research explored how the quality and structure of memories differs in autism, and my current research tests how we ‘reconstruct’ details of our memories, and how those details influence our subjective experience of the past.`;
 
   const imageSource = "./img/behaviour.jpg";
@@ -22,7 +22,7 @@ const ResBehaviour = ({mobile,bigScreen}) => {
   return (
     <Container style={mobile ? mobileStyle : {}}>
       <ResText bigScreen={bigScreen} mobile={mobile} text={textString} />
-      <ResPhoto mobile={mobile} source={imageSource} />
+      <ResPhoto portrait={portrait} mobile={mobile} source={imageSource} />
     </Container>
   );
 };
