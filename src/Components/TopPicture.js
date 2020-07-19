@@ -30,7 +30,7 @@ const TopPicture = ({bigScreen}) => {
     });
   var smallText = {fontSize: "3.2rem"}
   var bigStyle = {
-      fontSize: "8vh"
+      fontSize: "7vh"
   }
   return (
     <div id="home">
