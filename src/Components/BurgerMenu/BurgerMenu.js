@@ -10,8 +10,8 @@ const BurgerCircle = styled.div`
   align-items: center;
   top: 2vh;
   left: 2vw;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   background-color: transparent;
   border-radius: 50%;
   z-index: 98;
@@ -155,6 +155,7 @@ const BurgerMenu = () => {
           </a>
         </ButtonContainer>
         <Email>rose.cooper@bc.edu</Email>
+        <div style={{ height: "1vh" }} />
         <div style={{ height: "1vh" }} />
       </MenuBackground>
     </>

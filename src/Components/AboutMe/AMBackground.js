@@ -24,7 +24,7 @@ const AMBackground = ({mobile}) => {
   return (
     <Background style={mobile ? mobileStyle : {}}>
       <AMPhoto mobile={mobile}/>
-      <AMText />
+      <AMText mobile={mobile}/>
     </Background>
   );
 };

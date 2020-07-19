@@ -36,7 +36,7 @@ const Text2 = styled.div`
   padding-right: 7rem;
 `;
 
-const AMText = () => {
+const AMText = ({mobile}) => {
   var text = `2017 - present
   Postdoctoral Scholar
   Memory Modulation Lab, Boston College
@@ -46,11 +46,11 @@ const AMText = () => {
 
   var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember events, and how brain networks support the multidimensional quality of our memories`;
 
-  // ? to do to save data in mongodb??
-  //var string = data[0].aboutme.text;
-  //console.log(data[0].aboutme.text);
+  var mobileStyle = {
+    paddingLeft: "5vw"
+  }
   return (
-    <Container>
+    <Container style={mobile ? mobileStyle : {}}>
       <Text>{text}</Text>
       <Text2>{text2}</Text2>
     </Container>
