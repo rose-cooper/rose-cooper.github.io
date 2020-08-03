@@ -68,11 +68,13 @@ const MenuBar = ({bigScreen}) => {
   const linkedinSRC = "./img/linkedin.png";
   const twitterSRC = "./img/twitter.png";
   const googleSRC = "./img/googlescholar.png";
+  const githubSRC = "./img/github.png";
 
   const linkedinLink = "https://www.linkedin.com/in/rose-cooper-b46b8957/";
   const twitterLink = "https://twitter.com/RoseA_Cooper";
   const googleLink =
     "https://scholar.google.co.uk/citations?hl=en&user=oJhb_0YAAAAJ&imq=Rose+Cooper&view_op=list_works";
+  const githubLink = "https://github.com/rose-cooper";
 
   var bigStyle = {
       fontSize: "1.8vh"
@@ -94,6 +96,10 @@ const MenuBar = ({bigScreen}) => {
 
         <a href={googleLink} target="_blank" rel="noopener noreferrer">
           <MyIcon style={bigScreen ? bigIcon : {}} src={googleSRC} alt="" />
+        </a>
+
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <MyIcon style={bigScreen ? bigIcon : {}} src={githubSRC} alt="" />
         </a>
       </Buttons>
       <LinkContainer>
