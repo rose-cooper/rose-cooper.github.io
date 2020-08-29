@@ -93,7 +93,7 @@ const BurgerMenu = () => {
   const googleSRC = "./img/googlescholar.png";
   const githubSRC = "./img/github.png";
 
-  const linkedinLink = "https://www.linkedin.com/in/rose-cooper-b46b8957/";
+  const linkedinLink = "https://www.linkedin.com/in/rose-cooper-phd-b46b8957/";
   const twitterLink = "https://twitter.com/RoseA_Cooper";
   const googleLink =
     "https://scholar.google.co.uk/citations?hl=en&user=oJhb_0YAAAAJ&imq=Rose+Cooper&view_op=list_works";
