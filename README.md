@@ -1,8 +1,7 @@
 # How to update
 
-1. Make any changes locally and then push those changes to the 'dev' branch
-2. npm run deploy
-- builds website within the 'master' branch
+1. Make any changes locally (test with npm run start) and then push those changes to the 'dev' branch
+2. npm run deploy - builds website within the 'master' branch
 
 ## Home
 
