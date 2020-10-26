@@ -3,6 +3,9 @@ import styled from "@emotion/styled/macro";
 
 const Photo = styled.img`
   border-radius: 50%;
+  border-color: #a7a7a7;
+  border-width: 2px;
+  border-style: solid;
   object-fit: cover;
   position: absolute;
   left: 10%;
