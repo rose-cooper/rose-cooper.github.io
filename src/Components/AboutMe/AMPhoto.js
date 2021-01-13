@@ -31,9 +31,9 @@ const Container = styled.div`
 
 const AMPhoto = ({mobile}) => {
   var mobileStyle = {
-    width: "60%",
+    width: "75%",
     left: "0%",
-    marginBottom: "2%",
+    marginBottom: "5%",
   }
   var mobilePhoto = {
     width: "80%",
