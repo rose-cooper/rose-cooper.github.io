@@ -19,7 +19,7 @@ const Text = styled.div`
 const Footer = () => {
   return (
     <Container>
-      <Text>&copy; Rose Cooper 2020</Text>
+      <Text>&copy; Rose Cooper 2021</Text>
     </Container>
   );
 };
