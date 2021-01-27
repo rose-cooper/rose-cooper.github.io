@@ -36,7 +36,7 @@ const Text2 = styled.div`
 
 const AMText = ({mobile,bigScreen}) => {
   var text = `2017 - present
-  Postdoctoral Scholar, Boston College
+  Postdoctoral Research Fellow, Boston College
 
   2013-2017
   PhD Psychology, University of Cambridge`;
