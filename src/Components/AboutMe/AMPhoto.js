@@ -10,8 +10,8 @@ const Photo = styled.img`
   position: absolute;
   left: 5%;
   top: 15%;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   max-width: 600px;
   max-height: 600px;
 `;

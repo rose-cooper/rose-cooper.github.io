@@ -41,7 +41,7 @@ const AMText = ({mobile,bigScreen}) => {
   2013-2017
   PhD Psychology, University of Cambridge`;
 
-  var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember our environment, and how brain networks support the quality and content of our memories`;
+  var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember our environment, and how brain networks support the subjective experience of memory`;
 
   var mobileStyle = {
     paddingLeft: "5vw"
