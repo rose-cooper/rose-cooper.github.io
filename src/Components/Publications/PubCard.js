@@ -141,10 +141,11 @@ const PubCard = ({ data, mobile, prevPaper }) => {
       case "2015":
       case "2019":
         return color1;
-      case "2020":
       case "2016":
+      case "2020":
         return color2;
       case "2017":
+      case "2021":
         return color3;
       default:
         selectedColor = "black";
