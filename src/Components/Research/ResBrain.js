@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const ResBrain = ({mobile,bigScreen,portrait}) => {
-  var textString = `Remembering the past and imagining the future engages a large scale network of brain regions, known as the default network. Using functional magnetic resonance imaging (fMRI), my work investigates how information flows through this network and how its activity and connectivity shapes our ability to perceive and recall unique events. My research is particularly focused on connections between medial temporal and parietal areas and how their communication supports a hierarchical representation of events. I am also interested in how the pattern of functional connections within the default network explains memory idiosyncrasies or  “fingerprints” as well as differences in the way memories are experienced over time.`;
+  var textString = `Remembering the past and imagining the future engages a large scale network of brain regions, known as the default network. Using magnetic resonance imaging, my work investigates how functional activity and connectivity of this network shape our ability to perceive and recall unique visuospatial events. My research is particularly focused on connections between medial temporal and parietal brain regions and how their communication supports a context-based hierarchy of events in the brain. I am also interested in how the pattern of functional connections within the default network explains memory idiosyncrasies and individual differences in memory content.`;
 
   const imageSource = "./img/brain.png";
 
