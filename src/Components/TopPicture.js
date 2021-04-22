@@ -14,7 +14,7 @@ const Name = styled.div`
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  top: 5vh;
+  top: 4vh;
   left: 10vw;
   padding-top: 10vh;
   height: 20vh;
@@ -27,7 +27,7 @@ const TopPicture = ({bigScreen}) => {
   const isSmall = useMediaQuery({
       query: '(max-width: 768px)'
     });
-  var smallText = {fontSize: "2.2rem", paddingTop: "5vh"}
+  var smallText = {fontSize: "2.5rem", paddingTop: "5vh"}
   var smallImage = {height: "20vh"}
   var bigStyle = {
       fontSize: "7vh"
