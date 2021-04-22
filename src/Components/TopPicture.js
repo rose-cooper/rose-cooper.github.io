@@ -4,7 +4,6 @@ import { useMediaQuery } from 'react-responsive';
 
 const TopImage = styled.img`
   width: 100vw;
-  height: 50vh;
   object-fit: cover;
   position: relative;
   border-bottom: 2px solid black;
@@ -28,13 +27,14 @@ const TopPicture = ({bigScreen}) => {
   const isSmall = useMediaQuery({
       query: '(max-width: 768px)'
     });
-  var smallText = {fontSize: "3.2rem"}
+  var smallText = {fontSize: "2rem", paddingTop: "5vh"}
+  var smallImage = {height: "25vh"}
   var bigStyle = {
       fontSize: "7vh"
   }
   return (
     <div id="home">
-      <TopImage src={imageSource} alt=""></TopImage>
+      <TopImage style={isSmall ? smallImage : {height : '50vh'}} src={imageSource} alt=""></TopImage>
       <Name style={isSmall ? smallText : bigScreen ? bigStyle : {}}>Rose Cooper, PhD</Name>
     </div>
   );
