@@ -27,8 +27,8 @@ const TopPicture = ({bigScreen}) => {
   const isSmall = useMediaQuery({
       query: '(max-width: 768px)'
     });
-  var smallText = {fontSize: "2.5rem", paddingTop: "6vh"}
-  var smallImage = {height: "25vh"}
+  var smallText = {fontSize: "2.2rem", paddingTop: "5vh"}
+  var smallImage = {height: "20vh"}
   var bigStyle = {
       fontSize: "7vh"
   }
