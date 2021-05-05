@@ -146,7 +146,6 @@ const PubCard = ({ data, mobile, prevPaper }) => {
         return color2;
       case "2017":
       case "2021":
-      case "in press":
         return color3;
       default:
         selectedColor = "black";
