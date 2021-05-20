@@ -36,12 +36,12 @@ const Text2 = styled.div`
 
 const AMText = ({mobile,bigScreen}) => {
   var text = `2017 - present
-  Postdoctoral Research Fellow, Boston College
+  Postdoctoral Researcher, Boston College
 
   2013-2017
   PhD Psychology, University of Cambridge`;
 
-  var text2 = `I am a cognitive neuroscientist interested in how we perceive and remember our subjective visuospatial world`;
+  var text2 = `Cognitive neuroscientist asking how the brain represents our personal past`;
 
   var mobileStyle = {
     paddingLeft: "5vw"
