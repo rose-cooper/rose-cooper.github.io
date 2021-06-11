@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled/macro";
 
 const Photo = styled.img`
-  border-radius: 50%;
+  border-radius: 0%;
   border-color: black;
   border-width: 0px;
   border-style: solid;
@@ -11,9 +11,9 @@ const Photo = styled.img`
   left: 5%;
   top: 15%;
   width: 75%;
-  height: 75%;
+  height: 100%;
   max-width: 600px;
-  max-height: 600px;
+  max-height: 800px;
 `;
 
 const Container = styled.div`
