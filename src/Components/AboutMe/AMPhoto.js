@@ -2,16 +2,16 @@ import React from "react";
 import styled from "@emotion/styled/macro";
 
 const Photo = styled.img`
-  border-radius: 0%;
+  border-radius: 15%;
   border-color: black;
   border-width: 0px;
   border-style: solid;
   object-fit: cover;
   position: absolute;
-  left: 5%;
-  top: 15%;
-  width: 75%;
-  height: 100%;
+  left: 15%;
+  top: 10%;
+  width: 60%;
+  height: 80%;
   max-width: 600px;
   max-height: 800px;
 `;
@@ -31,13 +31,13 @@ const Container = styled.div`
 
 const AMPhoto = ({mobile}) => {
   var mobileStyle = {
-    width: "80%",
+    width: "70%",
     left: "0%",
-    marginBottom: "10%",
+    marginBottom: "20%",
   }
   var mobilePhoto = {
-    width: "80%",
-    height: "80%",
+    width: "75%",
+    height: "100%",
     left: "10%",
   }
   var imageSource = `./img/profile.jpeg`;
