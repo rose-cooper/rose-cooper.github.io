@@ -35,13 +35,13 @@ const Text2 = styled.div`
 `;
 
 const AMText = ({mobile,bigScreen}) => {
-  var text = `2017 - present
-  Postdoctoral Researcher, Boston College
+  var text = `Experiential AI Research Fellow
+  Northeastern University
 
-  2013-2017
-  PhD Psychology, University of Cambridge`;
+  PhD Psychology
+  University of Cambridge`;
 
-  var text2 = `Cognitive neuroscientist asking how the brain represents our personal past`;
+  var text2 = `Cognitive neuroscientist asking how the brain constructs and represents past events`;
 
   var mobileStyle = {
     paddingLeft: "5vw"
