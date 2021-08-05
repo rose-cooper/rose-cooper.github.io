@@ -38,10 +38,10 @@ const AMText = ({mobile,bigScreen}) => {
   var text = `Experiential AI Research Fellow
   Northeastern University
 
-  PhD Psychology
+  PhD Psychology (2017)
   University of Cambridge`;
 
-  var text2 = `Cognitive neuroscientist asking how the brain constructs and represents past events`;
+  var text2 = `Cognitive neuroscientist asking how the brain constructs our personal past`;
 
   var mobileStyle = {
     paddingLeft: "5vw"

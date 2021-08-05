@@ -121,7 +121,7 @@ const MenuBar = ({bigScreen}) => {
           </a>
         </Text>
       </LinkContainer>
-      <Email>rose.cooper@bc.edu</Email>
+      <Email>r.cooper@northeastern.edu</Email>
     </Background>
   );
 };
