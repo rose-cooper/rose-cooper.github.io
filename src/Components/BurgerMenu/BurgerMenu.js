@@ -160,7 +160,7 @@ const BurgerMenu = () => {
             <MyIcon src={githubSRC} alt="" />
           </a>
         </ButtonContainer>
-        <Email>rose.cooper@bc.edu</Email>
+        <Email>r.cooper@northeastern.edu</Email>
         <div style={{ height: "1vh" }} />
         <div style={{ height: "1vh" }} />
       </MenuBackground>
