@@ -140,6 +140,7 @@ const PubCard = ({ data, mobile, prevPaper }) => {
     switch (data.year) {
       case "2015":
       case "2019":
+      case "2022":
         return color1;
       case "2016":
       case "2020":
