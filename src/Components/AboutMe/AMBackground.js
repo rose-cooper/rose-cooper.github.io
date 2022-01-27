@@ -7,10 +7,10 @@ const Name = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 2.4rem;
+  line-height: 1;
   font-family: "Montserrat", sans-serif;
-  width: 60%;
+  width: 80%;
   font-weight: bold;
 `;
 
@@ -18,7 +18,7 @@ const Title = styled.div`
   line-height: 1.2;
   font-size: 1.15rem;
   display: flex;
-  width: 60%;
+  width: 80%;
   font-style: italic;
   flex-direction: column;
 `;

@@ -25,14 +25,14 @@ const Background = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: "Montserrat", sans-serif;
   color: black;
   padding-right: 40px;
   cursor: pointer;
 
   &:hover {
-    color: grey;
+    color: #008beb;
   }
 `;
 
@@ -49,7 +49,7 @@ const Buttons = styled.div`
 `;
 
 const Email = styled.div`
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-family: "Montserrat", sans-serif;
   color: black;
   text-align: right;

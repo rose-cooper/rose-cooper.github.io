@@ -12,9 +12,9 @@ const Container = styled.div`
 `;
 
 const ResBehaviour = ({mobile,bigScreen,portrait}) => {
-  var textString = `When we remember an event, such as dinner with friends or a hike through a national park, we mentally piece together the diverse features of our original experience — the sights, sounds, conversations, thoughts and feelings attached to that moment. Memory is more like a jigsaw puzzle than a video player: remembering one detail helps us to fit the others in place. But, the type of information we recall and the accuracy and vividness with which we do so varies considerably between events and from one person to another.
-  
-  My doctoral research explored how recollection of visual context (such as places) differs in autism, integrating behavioural assessments, eye tracking, and neuroimaging. My postdoctoral research uses multimodal, naturalistic paradigms in conjunction with MRI to test how we integrate and reconstruct perceptual, affective, and social features of our environment, and how those features influence our subjective experience of the past.`;
+  var textString = `MEMORY: When we remember a past event, we mentally piece together the features of our original experience — the sights, sounds, conversations, thoughts and feelings attached to that moment. Memory is more like a jigsaw puzzle than a video player: remembering one detail helps us to fit the others in place. But, the type of information we recall and the accuracy and vividness with which we do so varies considerably between events and from one person to another.
+
+During my PhD, I studied how memory for visual information of past events (such as places) differs in autism, integrating behavioral assessments, eye tracking, and neuroimaging. My postdoctoral research has used multimodal, naturalistic paradigms in conjunction with magnetic resonance imaging (MRI) to test how we encode and remember visual, emotional, and social features of events, and how those features influence our subjective experience of the past.`;
 
   const imageSource = "./img/behaviour.jpg";
 
