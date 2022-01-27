@@ -12,8 +12,8 @@ const BurgerCircle = styled.div`
   left: 2vw;
   width: 7vh;
   height: 7vh;
-  background-color: transparent;
-  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5%;
   z-index: 98;
   cursor: pointer;
 `;
@@ -114,13 +114,17 @@ const BurgerMenu = () => {
     transform: "rotate(-46deg)",
   };
 
+  var circleStyle = {
+    background: "transparent",
+  }
+
   return (
     <>
       <DarkenContainer
         style={!isOpen ? { transform: "translateX(-120%)" } : {}}
         onClick={() => collapseFunction()}
       />
-      <BurgerCircle open={isOpen} onClick={() => collapseFunction()}>
+      <BurgerCircle style={isOpen ? circleStyle : {}} open={isOpen} onClick={() => collapseFunction()}>
         <BurgerDiv style={isOpen ? topLineStyle : {}} />
         <BurgerDiv style={isOpen ? midLineStyle : {}} />
         <BurgerDiv style={isOpen ? botLineStyle : {}} />
