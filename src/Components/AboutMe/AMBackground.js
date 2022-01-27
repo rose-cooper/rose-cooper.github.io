@@ -10,7 +10,7 @@ const Name = styled.div`
   font-size: 2.4rem;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
-  width: 80%;
+  width: 90%;
   font-weight: bold;
 `;
 
@@ -18,7 +18,7 @@ const Title = styled.div`
   line-height: 1.2;
   font-size: 1.15rem;
   display: flex;
-  width: 80%;
+  width: 90%;
   font-style: italic;
   flex-direction: column;
 `;
