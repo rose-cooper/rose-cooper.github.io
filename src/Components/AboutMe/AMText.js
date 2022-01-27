@@ -22,26 +22,10 @@ const Text = styled.div`
   font-weight: 600;
 `;
 
-const Text2 = styled.div`
-  font-size: 1.2rem;
-  color: black;
-  word-wrap: normal;
-  display: block;
-  white-space: pre-line;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 2rem;
-  font-style: italic;
-`;
 
 const AMText = ({mobile,bigScreen}) => {
   var text = `Experiential AI Research Fellow
-  Northeastern University
-
-  PhD Psychology (2017)
-  University of Cambridge`;
-
-  var text2 = `Cognitive neuroscientist asking how the brain constructs our personal past`;
+  Northeastern University`;
 
   var mobileStyle = {
     paddingLeft: "5vw"
@@ -51,8 +35,7 @@ const AMText = ({mobile,bigScreen}) => {
   }
   return (
     <Container style={mobile ? mobileStyle : {}}>
-      <Text style={bigScreen ? bigStyle : {}}>{text}</Text>
-      <Text2 style={bigScreen ? bigStyle : {}}>{text2}</Text2>
+      <Text style={bigScreen ? bigStyle : {paddingLeft: "5vw"}}>{text}</Text>
     </Container>
   );
 };

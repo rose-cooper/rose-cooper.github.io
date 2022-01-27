@@ -13,7 +13,7 @@ const Background = styled.div`
   width: 100vw;
   height: 10vh;
   margin-top: -10vh;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   position: sticky;
   top: 0px;
   display: flex;

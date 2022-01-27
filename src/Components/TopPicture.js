@@ -34,8 +34,7 @@ const TopPicture = ({bigScreen}) => {
   }
   return (
     <div id="home">
-      <TopImage style={isSmall ? smallImage : {height : '50vh'}} src={imageSource} alt=""></TopImage>
-      <Name style={isSmall ? smallText : bigScreen ? bigStyle : {}}>Rose Cooper, PhD</Name>
+      <TopImage style={isSmall ? smallImage : {height : '40vh'}} src={imageSource} alt=""></TopImage>
     </div>
   );
 };
