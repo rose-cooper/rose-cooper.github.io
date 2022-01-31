@@ -12,9 +12,9 @@ const Container = styled.div`
 `;
 
 const ResBehaviour = ({mobile,bigScreen,portrait}) => {
-  var textString = `MEMORY: When we remember a past event, we mentally piece together the features of our original experience — the sights, sounds, conversations, thoughts and feelings attached to that moment. Memory is more like a jigsaw puzzle than a video player: remembering one detail helps us to fit the others in place. But, the type of information we recall and the accuracy and vividness with which we do so varies considerably between events and from one person to another.
+  var textString = `MEMORY: When we remember a past event, we mentally piece together the features of our original experience — the sights, sounds, conversations, thoughts and feelings attached to that moment in time. Memory is more like a jigsaw puzzle than a video player: remembering one detail helps us to fit the others in place. But, the type of information we recall and the accuracy and vividness with which we do so varies considerably between memories and from one person to another.
 
-During my PhD, I studied how memory for visual information of past events (such as places) differs in autism, integrating behavioral assessments, eye tracking, and neuroimaging. My postdoctoral research has used multimodal, naturalistic paradigms in conjunction with magnetic resonance imaging (MRI) to test how we encode and remember visual, emotional, and social features of events, and how those features influence our subjective experience of the past.`;
+During my PhD, I studied how memory for visual information of past events (such as places) differs in autism, integrating behavioral assessments, eye tracking, and neuroimaging. My postdoctoral research has used multimodal, dynamic tasks in conjunction with magnetic resonance imaging (MRI) to test how we perceive and remember visual, emotional, and social features of our environment, and how those features influence our subjective experience of the past.`;
 
   const imageSource = "./img/behaviour.jpg";
 

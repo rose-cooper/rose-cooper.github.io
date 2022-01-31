@@ -13,9 +13,9 @@ const Container = styled.div`
 `;
 
 const ResBrain = ({mobile,bigScreen,portrait}) => {
-  var textString = `BRAIN STATES: Remembering the past engages a distributed brain network, known as the default network, including regions such as medial prefrontal cortex, posterior parietal cortex, and the medial temporal lobe. Using functional MRI, my work investigates how different states of activity and communication within this network shape our ability to perceive and remember events, and how different brain network states explain individual differences in subjective experience.
+  var textString = `BRAIN STATES: Remembering the past engages a distributed network of brain regions, known as the default network, including regions such as posterior parietal cortex and the medial temporal lobe. Using functional MRI, my work investigates how different states of activity and communication within this network shape our ability to perceive and remember events, and explain individual differences in subjective experience.
 
-  I am currently working within a psychology, computer science, and engineering team to develop new data-driven, machine learning methods that model individual and time-specific differences in brain states. These methods will improve our ability to detect and predict individual and population differences in distributed patterns of brain activity, and allow us to test core neuroscience hypotheses about the mapping of brain regions to specific cognitive functions, such as memory.`;
+  I am currently working within a psychology, computer science, and engineering team to develop new data-driven, machine learning methods that model individual and time-specific differences in brain states. These methods will improve our ability to test core neuroscience hypotheses about the mapping of brain regions to specific cognitive functions, such as memory and social cognition.`;
 
   const imageSource = "./img/brain.png";
 
