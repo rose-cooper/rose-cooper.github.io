@@ -24,8 +24,8 @@ const Text = styled.div`
 
 
 const AMText = ({mobile,bigScreen}) => {
-  var text = `Experiential AI Research Fellow
-  Northeastern University`;
+  var text = `Experiential AI Postdoctoral Research Associate
+  Roux Institute, Northeastern University`;
 
   var mobileStyle = {
     paddingLeft: "5vw"
