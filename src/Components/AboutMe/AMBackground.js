@@ -16,7 +16,7 @@ const Name = styled.div`
 
 const Title = styled.div`
   line-height: 1.2;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   display: flex;
   width: 80%;
   font-style: italic;
@@ -63,8 +63,9 @@ const AMBackground = ({mobile,bigScreen}) => {
     width: "100%",
     marginBottom: "1rem",
   }
-  var titleText1 = "Experiential AI Research Associate";
-  var titleText2 = "Northeastern University";
+  var titleText1 = "Experiential AI Postdoctoral Research Associate";
+  var titleText2 = "Roux Institute & Dept. of Psychology";
+  var titleText3 = "Northeastern University";
   return (
     <Container>
       <Background style={mobile ? mobileStyle : {}}>
@@ -74,6 +75,7 @@ const AMBackground = ({mobile,bigScreen}) => {
         <Title style={mobile ? mobileTextStyle : {}}>
           <div>{titleText1}</div>
           <div>{titleText2}</div>
+          <div>{titleText3}</div>
         </Title>
       </Background>
       <Blurb>Neuroscience • Psychology • AI</Blurb>
