@@ -1,5 +1,14 @@
 [
   {
+    "title": "Integrating region- and network-level contributions to episodic recollection using multilevel structural equation modeling",
+    "authors": "Kurkela, K. A., Cooper, R. A., Ryu, E., & Ritchey, M.",
+    "journal": "bioRxiv",
+    "year": "2022",
+    "abstract": "The brain is composed of networks of interacting brain regions that support higher order cognition. For instance, a posterior medial (PM) network appears to support recollection and other forms of episodic construction. Past research has focused largely on the roles of individual brain regions in recollection or on their mutual engagement as part of an integrated network. Yet the relationship between these region- and network-level contributions remains poorly understood. Here we applied multilevel structural equation modeling (SEM) to examine the functional organization of the PM network and its relationship to episodic memory outcomes. We evaluated two aspects of functional heterogeneity in the PM network: first, the organization of individual regions into subnetworks, and second, the presence of regionally-specific contributions while accounting for network-level effects. The results suggest that the PM network is composed of ventral and dorsal subnetworks, with the ventral subnetwork making a unique contribution to recollection, and that memory-related activity in individual regions is well accounted for by these network-level effects. These findings highlight the importance of considering both region and network levels of analysis when studying brain-behavior relationships.",
+    "link": "https://www.biorxiv.org/content/10.1101/2022.02.08.478511v1",
+    "hasOSF": null,
+    "github": "https://github.com/memobc/paper-integrating-region-network"
+  },{
     "title": "Patterns of episodic content and specificity predicting subjective memory vividness",
     "authors": "Cooper, R. A. & Ritchey, M.",
     "journal": "PsyArXiv",
