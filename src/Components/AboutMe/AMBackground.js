@@ -15,11 +15,10 @@ const Name = styled.div`
 `;
 
 const Title = styled.div`
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: 1.1rem;
   display: flex;
   width: 80%;
-  font-style: italic;
   flex-direction: column;
 `;
 
@@ -61,11 +60,10 @@ const AMBackground = ({mobile,bigScreen}) => {
   }
   var mobileTextStyle = {
     width: "100%",
-    marginBottom: "1rem",
+    marginBottom: "1.5rem",
   }
-  var titleText1 = "Experiential AI Postdoctoral Research Associate";
-  var titleText2 = "Roux Institute & Dept. of Psychology";
-  var titleText3 = "Northeastern University";
+  var titleText1 = "Experiential AI Postdoctoral Researcher";
+  var titleText2 = "Northeastern University";
   return (
     <Container>
       <Background style={mobile ? mobileStyle : {}}>
@@ -75,7 +73,6 @@ const AMBackground = ({mobile,bigScreen}) => {
         <Title style={mobile ? mobileTextStyle : {}}>
           <div>{titleText1}</div>
           <div>{titleText2}</div>
-          <div>{titleText3}</div>
         </Title>
       </Background>
       <Blurb>Neuroscience • Psychology • AI</Blurb>
