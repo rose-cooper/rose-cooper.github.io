@@ -7,24 +7,26 @@ const Name = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   width: 80%;
   font-weight: bold;
+  padding-bottom: 0.5rem;
 `;
 
 const Title = styled.div`
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 1.1rem;
   display: flex;
   width: 80%;
+  font-family: "Montserrat", sans-serif;
   flex-direction: column;
 `;
 
 const Blurb = styled.div`
   padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   line-height: 1;
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
