@@ -17,20 +17,11 @@ const Name = styled.div`
 
 const Title = styled.div`
   line-height: 1.2;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: flex;
   width: 80%;
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
-`;
-
-const Blurb = styled.div`
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  line-height: 1;
-  font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
-  color: #008beb;
 `;
 
 const Background = styled.div`
@@ -64,8 +55,8 @@ const AMBackground = ({mobile,bigScreen}) => {
     width: "100%",
     marginBottom: "1.5rem",
   }
-  var titleText1 = "Experiential AI Postdoctoral Researcher";
-  var titleText2 = "Northeastern University";
+  var titleText1 = "UX Research Scientist";
+  var titleText2 = "Meta Reality Labs";
   return (
     <Container>
       <Background style={mobile ? mobileStyle : {}}>
@@ -77,7 +68,6 @@ const AMBackground = ({mobile,bigScreen}) => {
           <div>{titleText2}</div>
         </Title>
       </Background>
-      <Blurb>Neuroscience • Psychology • AI</Blurb>
     </Container>
   );
 };

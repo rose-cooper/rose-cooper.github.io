@@ -137,16 +137,6 @@ const BurgerMenu = () => {
         <Link to="publications" smooth={true} duration={1000}>
           <Text>Papers</Text>
         </Link>
-        <Text>
-          <a
-            href={cv}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            CV
-          </a>
-        </Text>
         <ButtonContainer>
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
             <MyIcon src={linkedinSRC} alt="" />
@@ -164,7 +154,7 @@ const BurgerMenu = () => {
             <MyIcon src={githubSRC} alt="" />
           </a>
         </ButtonContainer>
-        <Email>r.cooper@northeastern.edu</Email>
+        <Email> </Email>
         <div style={{ height: "1vh" }} />
         <div style={{ height: "1vh" }} />
       </MenuBackground>

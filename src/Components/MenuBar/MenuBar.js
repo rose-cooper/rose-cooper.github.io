@@ -110,18 +110,8 @@ const MenuBar = ({bigScreen}) => {
         <Link to="publications" smooth={true} duration={1000}>
           <Text>Papers</Text>
         </Link>
-        <Text>
-          <a
-            href={cv}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            CV
-          </a>
-        </Text>
       </LinkContainer>
-      <Email>r.cooper@northeastern.edu</Email>
+      <Email> </Email>
     </Background>
   );
 };
